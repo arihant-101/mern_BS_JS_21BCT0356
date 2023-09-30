@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:white;
+}
+
+.registartion-form h1 {
+  color:blue;
+  font-family: sans-serif;
+  text-align: center;
+  }
+
+.registartion-form {
+  display: flex;
+  justify-content: center;
+  align-items:left;
+  width: 700px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: sans-serif;
+  background:linear-gradient(to bottom, #ffff99 0%, #ff66cc 100%);
+  padding: 20px;
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  }
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.registartion-form .submit {
+  width: 25%;
+  padding: 4px 0;
+  font-size: 18px;
+  color: white;
+  background-color: red;
+  border:2px solid black;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+  
+.registartion-form label {
+    color: black;
+    text-align: right;
+  }
+
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+/* Adjust the width of the label column */
+.registartion-form td:nth-child(odd) {
+    width: 200px; /* You can adjust the width as needed */
+    text-align: right;
+  }
+  
+  /* Adjust the width of the input box column */
+  .registartion-form td:nth-child(even) {
+    width: 500px; /* You can adjust the width as needed */
+    text-align: left;
+    padding-left: 20px;
+  }
+
+ /* Change color of checkbox and radio button labels to black */
+.registartion-form input[type="checkbox"] + label::before,
+.registartion-form input[type="radio"] + label::before {
+  color: black;
+}
