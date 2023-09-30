@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>animation</title>
+<style>
+    /* CSS for styling the text */
+    .instruction-text {
+        font-size: 24px; 
+        color: blue; /* Set the text color to blue */
+        text-align: center; /* Center-align the text horizontally */
+    }
+
+    /* CSS for centering the buttons */
+    .button-container {
+        text-align: center; /* Center-align its contents horizontally */
+    }
+</style>
+<script src="js/ts7script.js"></script>
+</head>
+<body>
+    <div class="image-container">
+        <img src="engine.jpg" id='engine' alt="">
+    </div>
+    <br><br>
+    <!-- Apply the CSS class to the text -->
+    <p class="instruction-text">Click the following buttons to handle animation</p>
+    <br><br>
+
+    <!-- Wrap buttons in a container for centering -->
+    <div class="button-container">
+        <button onclick="move();">Start</button>
+        <button onclick="stop()">Stop</button>
+    </div>
+</body>
+</html>
